@@ -1,0 +1,132 @@
+/*-------------------------------------------
+    Colors and Sizes
+-------------------------------------------*/
+
+/* Colors */
+
+$black: #252525;
+
+
+/* Text */
+
+$base: 12px;
+$base-sm: $base/2;
+$base-med: $base * 2;
+$base-lg: $base * 3;
+
+$base-font-size: 14px;
+$base-font-rem: 1.4rem;
+$base-line-height: $base-med;
+
+$body-text: arial, sans-serif;
+
+
+/*-------------------------------------------
+    Grid Dimensions
+-------------------------------------------*/
+$grid-col: 50px;
+$grid-gutter: 20px;
+$grid-num: 12;
+$max-page-width: ($grid-col * $grid-num) + ($grid-gutter * ($grid-num - 1));
+
+@mixin percent($col-num: 6, $gutter-num: 4, $context: $max-page-width) {
+	width: percentage((($grid-col * $col-num)+($grid-gutter * $gutter-num))/$context);
+}
+
+$maxContentWidth: $max-page-width + $grid-gutter;
+
+@mixin wrap {
+	margin: 0 auto;
+	padding: 0 ($grid-gutter/2);
+	max-width: $maxContentWidth;
+	@include border-box;
+}
+
+// Queries
+$q-desktop: 1400px;
+
+
+/*-------------------------------------------
+
+   	 General Selectors
+-------------------------------------------*/
+* { margin: 0; padding: 0; line-height: 1; }
+
+html { font-size: 62.5%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+
+body { font-size: $base-font-size; font-size: $base-font-rem; line-height:$base-line-height; font-family: arial, sans-serif; }
+
+
+/* block level */
+
+h1, .alpha { }
+h2, .beta { }
+h3, .gamma { }
+h4, .delta { }
+h5, .epsilon { }
+h6, .zeta { }
+
+
+p, ul, dl, ol { 
+	font-size: $base-font-size;
+}
+
+ul li { list-style-type: none; }
+
+table { 
+	border-collapse: collapse; 
+}
+th { }
+td { }
+
+blockquote {
+	p { }
+	.who { }
+}
+
+
+/* inline */
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+
+a {
+  &:hover, &:focus { 
+  	
+  }
+}
+
+
+img { 
+	
+}
+
+code { font: 12px/1 'Courier New', Courier, monospace; }
+
+sub, sup { line-height: 0; }
+
+::-moz-selection { background: #d88cff; color: #000; text-shadow: none; }
+::selection { background: #d88cff; color: #000; text-shadow: none; }
+
+/*-------------------------------------------
+   	Forms
+-------------------------------------------*/
+form {
+
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	
+}
+
+input, textarea {
+
+}
+
+input[type="submit"]{
+
+}

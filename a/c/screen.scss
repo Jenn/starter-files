@@ -1,0 +1,23 @@
+// Screen Styles
+
+@import "global";
+@import "general";
+ 
+
+/*-------------------------------------------
+   	Partials
+-------------------------------------------*/
+@import "pieces/header";
+@import "pieces/footer";
+@import "pieces/layouts";
+
+
+/*-------------------------------------------
+   	Additional Classes
+-------------------------------------------*/
+.clearfix { @include clearfix; }
+
+.left { display: block; float: left; margin: 0 15px 15px 0; }
+.right { display: block; float: right; margin: 0 0 15px 15px; }
+
+.upper { text-transform: uppercase; }

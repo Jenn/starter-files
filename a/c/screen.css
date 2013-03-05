@@ -1,0 +1,127 @@
+/*-------------------------------------------
+   	Global Combos
+-------------------------------------------*/
+article, aside, details, fig caption, figure, footer, header, group, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*-------------------------------------------
+   	Global Mixins
+-------------------------------------------*/
+/*-------------------------------------------
+    Colors and Sizes
+-------------------------------------------*/
+/* Colors */
+/* Text */
+/*-------------------------------------------
+    Grid Dimensions
+-------------------------------------------*/
+/*-------------------------------------------
+
+   	 General Selectors
+-------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1; }
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 24px;
+  font-family: arial, sans-serif; }
+
+/* block level */
+p, ul, dl, ol {
+  font-size: 14px; }
+
+ul li {
+  list-style-type: none; }
+
+table {
+  border-collapse: collapse; }
+
+/* inline */
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+code {
+  font: 12px/1 "Courier New", Courier, monospace; }
+
+sub, sup {
+  line-height: 0; }
+
+::-moz-selection {
+  background: #d88cff;
+  color: #000;
+  text-shadow: none; }
+
+::selection {
+  background: #d88cff;
+  color: #000;
+  text-shadow: none; }
+
+/*-------------------------------------------
+   	Forms
+-------------------------------------------*/
+fieldset {
+  border: none; }
+
+/*-------------------------------------------
+   	Partials
+-------------------------------------------*/
+/*  Page Containers */
+.wrap {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 840px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*-------------------------------------------
+   	Page Layouts A-? 
+   	determined by body classes
+-------------------------------------------*/
+/* 
+	LAYOUT A
+	Sub on left, Main on Right 
+*/
+/*-------------------------------------------
+   	Additional Classes
+-------------------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0; }
+.lt-ie8 .clearfix {
+  zoom: 1; }
+
+.left {
+  display: block;
+  float: left;
+  margin: 0 15px 15px 0; }
+
+.right {
+  display: block;
+  float: right;
+  margin: 0 0 15px 15px; }
+
+.upper {
+  text-transform: uppercase; }

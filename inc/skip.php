@@ -1,0 +1,1 @@
+<p class="move"><a href="#skip">Skip to main content</a></p>
