@@ -1,1 +1,12 @@
 // Footer Styles
+
+.page-footer {
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover, &:focus {
+			color: rgba(255,255,255, 0.6);
+		}
+	}
+}

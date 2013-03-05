@@ -13,15 +13,18 @@ audio, canvas, video {
    	Global Mixins
 -------------------------------------------*/
 /*-------------------------------------------
-    Colors and Sizes
--------------------------------------------*/
-/* Colors */
-/* Text */
-/*-------------------------------------------
-    Grid Dimensions
+    Colors
 -------------------------------------------*/
 /*-------------------------------------------
-
+    Sizes
+-------------------------------------------*/
+/*-------------------------------------------
+    Fonts
+-------------------------------------------*/
+/*-------------------------------------------
+    Grid
+-------------------------------------------*/
+/*-------------------------------------------
    	 General Selectors
 -------------------------------------------*/
 * {
@@ -39,17 +42,77 @@ body {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 24px;
-  font-family: arial, sans-serif; }
+  font-family: arial, sans-serif;
+  background: #ede7c9; }
 
 /* block level */
+h1, .alpha {
+  font-size: 34px;
+  font-size: 3.4rem;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 24px; }
+
+h2, .beta {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 24px; }
+
+h3, .gamma {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 24px; }
+
+h4, .delta {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 12px; }
+
+h5, .epsilon {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  margin-bottom: 12px; }
+
+h6, .zeta {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 12px; }
+
 p, ul, dl, ol {
-  font-size: 14px; }
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-bottom: 12px; }
+
+li {
+  margin-bottom: 12px; }
 
 ul li {
   list-style-type: none; }
 
+ol li {
+  margin-left: 20px; }
+
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border: 2px solid #050f0b; }
+
+th {
+  text-align: left;
+  padding: 12px 5px; }
+
+td {
+  padding: 6px 5px; }
+
+caption {
+  border: 2px solid #050f0b;
+  border-bottom: none;
+  padding: 12px 5px; }
 
 /* inline */
 em {
@@ -57,6 +120,15 @@ em {
 
 strong {
   font-weight: bold; }
+
+a {
+  color: #245f6b; }
+  a:hover, a:focus {
+    color: #132339; }
+
+img {
+  display: block;
+  margin-bottom: 12px; }
 
 code {
   font: 12px/1 "Courier New", Courier, monospace; }
@@ -83,14 +155,47 @@ fieldset {
 /*-------------------------------------------
    	Partials
 -------------------------------------------*/
+.page-header {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff; }
+  .page-header a {
+    color: #fff; }
+    .page-header a:hover, .page-header a:focus {
+      color: rgba(255, 255, 255, 0.6); }
+
+.logo {
+  display: block;
+  font-size: 40px;
+  font-size: 4rem;
+  margin-bottom: 12px; }
+
+.nav-main {
+  float: left; }
+  .nav-main li {
+    display: inline; }
+
+#search {
+  float: right; }
+
+.page-footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff; }
+  .page-footer a {
+    color: #fff; }
+    .page-footer a:hover, .page-footer a:focus {
+      color: rgba(255, 255, 255, 0.6); }
+
 /*  Page Containers */
 .wrap {
   margin: 0 auto;
-  padding: 0 10px;
-  max-width: 840px;
+  padding: 12px 20px;
+  max-width: 980px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.content .wrap {
+  background: #f8faf0; }
 
 /*-------------------------------------------
    	Page Layouts A-? 
@@ -125,3 +230,7 @@ fieldset {
 
 .upper {
   text-transform: uppercase; }
+
+.move {
+  position: absolute;
+  left: -9999px; }

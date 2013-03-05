@@ -1,1 +1,29 @@
 // Header Styles
+
+.page-header {
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover, &:focus {
+			color: rgba(255,255,255, 0.6);
+		}
+	}
+}
+
+.logo {
+	display: block;
+	font-size: 40px; font-size: 4rem;
+	margin-bottom: $base;
+}
+
+.nav-main {
+	float: left;
+	li {
+		display: inline;
+	}
+}
+
+#search {
+	float: right;
+}

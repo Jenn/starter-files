@@ -1,32 +1,41 @@
 /*-------------------------------------------
-    Colors and Sizes
+    Colors
 -------------------------------------------*/
+$black: #050f0b;
+$blue: #245f6b;
+$dk-blue: #132339;
+$coral: #d29a79;
+$cream: #ede7C9;
+$white: #f8faf0;
 
-/* Colors */
 
-$black: #252525;
-
-
-/* Text */
-
+/*-------------------------------------------
+    Sizes
+-------------------------------------------*/
 $base: 12px;
 $base-sm: $base/2;
 $base-med: $base * 2;
 $base-lg: $base * 3;
+$base-xl: $base * 4;
 
 $base-font-size: 14px;
 $base-font-rem: 1.4rem;
 $base-line-height: $base-med;
 
-$body-text: arial, sans-serif;
+
+/*-------------------------------------------
+    Fonts
+-------------------------------------------*/
+$headline-text: Verdana, sans-serif;
+$body-text: Georgia, serif;
 
 
 /*-------------------------------------------
-    Grid Dimensions
+    Grid
 -------------------------------------------*/
-$grid-col: 50px;
+$grid-col: 78px;
 $grid-gutter: 20px;
-$grid-num: 12;
+$grid-num: 10;
 $max-page-width: ($grid-col * $grid-num) + ($grid-gutter * ($grid-num - 1));
 
 @mixin percent($col-num: 6, $gutter-num: 4, $context: $max-page-width) {
@@ -37,47 +46,102 @@ $maxContentWidth: $max-page-width + $grid-gutter;
 
 @mixin wrap {
 	margin: 0 auto;
-	padding: 0 ($grid-gutter/2);
+	padding: $base $grid-gutter;
 	max-width: $maxContentWidth;
 	@include border-box;
 }
 
-// Queries
-$q-desktop: 1400px;
+// Breakpoints/Queries decided by design
+$q-320: 320px;
+$q-400: 400px;
+$q-1200: 1200px;
+
+
+//end variable declarations
 
 
 /*-------------------------------------------
-
    	 General Selectors
 -------------------------------------------*/
 * { margin: 0; padding: 0; line-height: 1; }
 
 html { font-size: 62.5%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
 
-body { font-size: $base-font-size; font-size: $base-font-rem; line-height:$base-line-height; font-family: arial, sans-serif; }
+body { font-size: $base-font-size; font-size: $base-font-rem; line-height:$base-line-height; font-family: arial, sans-serif; background: $cream; }
 
 
 /* block level */
-
-h1, .alpha { }
-h2, .beta { }
-h3, .gamma { }
-h4, .delta { }
-h5, .epsilon { }
-h6, .zeta { }
+h1, .alpha { 
+	font-size: 34px; font-size: 3.4rem; 
+	font-family: $headline-text; 
+	margin-bottom: $base-med;
+}
+h2, .beta {
+	font-size: 28px; font-size: 2.8rem; 
+	font-family: $headline-text;
+	margin-bottom: $base-med;
+}
+h3, .gamma {
+	font-size: 24px; font-size: 2.4rem; 
+	font-family: $headline-text; 
+	margin-bottom: $base-med;
+}
+h4, .delta {
+	font-size: 20px; font-size: 2rem; 
+	font-family: $headline-text; 
+	text-transform: uppercase; 
+	margin-bottom: $base;
+}
+h5, .epsilon {
+	font-size: 20px; font-size: 2rem; 
+	font-family: $body-text; 
+	margin-bottom: $base;
+}
+h6, .zeta {
+	font-size: 18px; font-size: 1.8rem; 
+	font-family: $headline-text; 
+	margin-bottom: $base;
+}
 
 
 p, ul, dl, ol { 
-	font-size: $base-font-size;
+	font-size: $base-font-size; font-size: $base-font-rem;
+	line-height: $base-line-height;
+	margin-bottom: $base;
 }
 
-ul li { list-style-type: none; }
+li {
+	margin-bottom: $base;
+}
+
+ul {
+	li {
+		list-style-type: none;
+	}
+}
+
+ol {
+	li {
+		margin-left: $grid-gutter;
+	}
+}
 
 table { 
 	border-collapse: collapse; 
+	border: 2px solid $black;
 }
-th { }
-td { }
+th {
+	text-align: left;
+	padding: $base $grid-gutter/4;
+}
+td { 
+	padding: $base-sm $grid-gutter/4;
+}
+caption {
+	border: 2px solid $black;
+	border-bottom: none;
+	padding: $base $grid-gutter/4;
+}
 
 blockquote {
 	p { }
@@ -91,14 +155,16 @@ strong { font-weight: bold; }
 
 
 a {
-  &:hover, &:focus { 
-  	
-  }
+	color: $blue;
+	&:hover, &:focus { 
+		color: $dk-blue;
+	}
 }
 
 
 img { 
-	
+	display: block;
+	margin-bottom: $base;
 }
 
 code { font: 12px/1 'Courier New', Courier, monospace; }

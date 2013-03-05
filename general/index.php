@@ -18,19 +18,36 @@
 
         <h1>[h1, .alpha] Heading 1</h1>
 
-        <h2>[h2, .beta] Heading 2</h2>
+        <p>You know, of course, <a href="">that courage is always</a> inside one; so that this really cannot be called courage until you have swallowed it</p>
+
+        <h2><a href="">[h2, .beta] Heading 2</a></h2>
+
+        <p>Bacon ipsum dolor sit amet beef ribs turkey shank, pork swine ground round sirloin pork loin corned beef spare ribs venison biltong.</p>
 
         <h3>[h3, .gamma] Heading 3</h3>
 
+        <p>Cold filter mouthfeel original gravity length final gravity, <a href="">trappist</a>. anaerobic hard cider aroma hops. carbonation carboy attenuation specific gravity bacterial.</p>
+
         <h4>[h4, .delta] Heading 4</h4>
 
+        <p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro.</p>
+
         <h5>[h5, .epsilon] Heading 5</h5>
+
+        <p>To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?</p>
       
         <h6>[h6, .zeta] Heading 6</h6>
 
-        <p>Upon searching, it was found that the casks last struck into the hold were perfectly sound, and that the leak must be further off. So, it being calm weather, they broke out deeper and deeper, disturbing the slumbers of the huge ground-tier butts; and from that black midnight sending those gigantic moles into the daylight above. So deep did they go; and so ancient, and corroded, and weedy the aspect of the lowermost puncheons, that you almost looked next for some mouldy corner-stone cask containing coins of Captain Noah, with copies of the posted placards, vainly warning the infatuated old world from the flood. Tierce after tierce, too, of water, and bread, and beef, and shooks of staves, and iron bundles of hoops, were hoisted out, till at last the piled decks were hard to get about; and the hollow hull echoed under foot, as if you were treading over empty catacombs, and reeled and rolled in the sea like an air-freighted demijohn. Top-heavy was the ship as a dinnerless student with all Aristotle in his head. Well was it that the Typhoons did not visit them then.</p>
+        <p>If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.</p>
 
-        <p>Now, at this time it was that my poor pagan companion, and fast bosom-friend, Queequeg, was seized with a fever, which brought him nigh to his endless end.</p>
+        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
+
+        <figure>
+          <img src="http://placekitten.com/500/200" alt="kitties!" />
+          <figcaption>
+            <p>This is a picture of cats.</p>
+          </figcaption>
+        </figure>
 
         <ul>
           <li>Upon searching, it was found that the casks last struck into the hold were perfectly sound, and that the leak must be further off</li>
@@ -57,32 +74,32 @@ Cause it doesn't make a difference if we make it or not. We've got each other an
         </blockquote>
 
         <table>
-        <caption>[caption, .epsilon 20/25]Table Caption</caption>
-        <thead>
-          <tr>
-            <th>Column 1 Header</th>
-            <th>Column 2 Header</th>
-            <th>Very Long Column 3 Header</th>
-          </tr>
-        </thead>
+          <caption>[caption] Table Caption</caption>
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td>Donec quam felis, ultricies nec, pellentesque. Donec quam felis, ultricies nec, pellentesque.</td>
-            <td>Aenean massa.</td>
-            <td>Kant montes, nascetur ridiculus mus.</td>
-          </tr>
-          <tr>
-            <td>Donec quam felis, ultricies nec, pellentesque.</td>
-            <td>Aenean massa.</td>
-            <td>Kant montes, nascetur ridiculus mus.</td>
-          </tr>
-          <tr>
-            <td>Donec quam felis, ultricies nec, pellentesque.</td>
-            <td>Aenean massa.</td>
-            <td>Kant montes, nascetur ridiculus mus.</td>
-          </tr>
-        </tbody>
+          <tbody>
+            <tr>
+              <td>Donec quam felis, ultricies nec, pellentesque. Donec quam felis, ultricies nec, pellentesque.</td>
+              <td>Aenean massa.</td>
+              <td>Kant montes, nascetur ridiculus mus.</td>
+            </tr>
+            <tr>
+              <td>Donec quam felis, ultricies nec, pellentesque.</td>
+              <td>Aenean massa.</td>
+              <td>Kant montes, nascetur ridiculus mus.</td>
+            </tr>
+            <tr>
+              <td>Donec quam felis, ultricies nec, pellentesque.</td>
+              <td>Aenean massa.</td>
+              <td>Kant montes, nascetur ridiculus mus.</td>
+            </tr>
+          </tbody>
       </table>
 
       </section>

@@ -5,7 +5,11 @@
 	@include wrap;
 }
 
-
+.content {
+	.wrap {
+		background: $white;
+	}
+}
 /*-------------------------------------------
    	Page Layouts A-? 
    	determined by body classes
