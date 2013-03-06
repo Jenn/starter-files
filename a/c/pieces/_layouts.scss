@@ -8,6 +8,7 @@
 .content {
 	.wrap {
 		background: $white;
+		@include clearfix;
 	}
 }
 /*-------------------------------------------
@@ -18,9 +19,32 @@
 
 /* 
 	LAYOUT A
-	Sub on left, Main on Right 
+	Full Column 
 */
-
 .layout-a {
+	.main {
+		width: 100%;
+		@include border-box;
+		padding: $base $grid-gutter;
+	}
+}
 
+
+/* 
+	LAYOUT B
+	Main on left, Sub on right 
+*/
+.layout-b {
+	.main {
+		float: left;
+		@include percent(7,6);
+		@include border-box;
+		padding: $base $grid-gutter;
+	}
+	.sub {
+		float: right;
+		@include percent(3,3);
+		@include border-box;
+		padding: $base $grid-gutter;
+	}
 }

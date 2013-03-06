@@ -196,6 +196,15 @@ fieldset {
 
 .content .wrap {
   background: #f8faf0; }
+  .content .wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0; }
+  .lt-ie8 .content .wrap {
+    zoom: 1; }
 
 /*-------------------------------------------
    	Page Layouts A-? 
@@ -203,8 +212,34 @@ fieldset {
 -------------------------------------------*/
 /* 
 	LAYOUT A
-	Sub on left, Main on Right 
+	Full Column 
 */
+.layout-a .main {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 20px; }
+
+/* 
+	LAYOUT B
+	Main on left, Sub on right 
+*/
+.layout-b .main {
+  float: left;
+  width: 69.375%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 20px; }
+.layout-b .sub {
+  float: right;
+  width: 30.625%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 20px; }
+
 /*-------------------------------------------
    	Additional Classes
 -------------------------------------------*/
@@ -231,6 +266,12 @@ fieldset {
 .upper {
   text-transform: uppercase; }
 
+.line {
+  display: block; }
+
 .move {
   position: absolute;
   left: -9999px; }
+
+.hide {
+  display: none; }

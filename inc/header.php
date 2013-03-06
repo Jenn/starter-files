@@ -15,11 +15,11 @@
 			<form action="/results/" method="post" id="search">
 				<p>
 					<label for="searchtext" class="move">Search:</label>
-					<input type="text" id="searchtext" name="searchtext" placeholder="Awesome, Code, TMNT" />
+					<input type="text" id="searchtext" name="searchtext" placeholder="Rad, HTML, TMNT" />
 					<input type="submit" value="Search" />
 				</p>
 			</form>
 		</div>
-		
+
 	</div>
 </header>
