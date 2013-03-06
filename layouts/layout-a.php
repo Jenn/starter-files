@@ -1,7 +1,10 @@
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/doctype.php"); ?>
+<?php $base="../"; ?>
+<?php require($base."/inc/doctype.php"); ?>
 <title>Layout A</title>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/meta.php"); ?>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/cssReference.php"); ?>
+<?php require($base."/inc/meta.php"); ?>
+<!--[if lt IE 9]><script src="/a/j/html5shiv.js"></script><![endif]-->
+<link href="../a/c/screen.css" rel="stylesheet" media="screen, projection" type="text/css" />
+<link href="../a/c/print.css" rel="stylesheet" media="print" type="text/css" />
 <style>
   .main { outline: 1px dotted rgba(126, 62, 104, 1); position: relative; }
   .main:after { position: absolute; top: -1em; left: -1em; padding: 10px; color: #fff; content: ".layout-a .main"; background: rgba(126, 62, 104, 0.7);}
@@ -10,9 +13,9 @@
 
 <body class="layout-a">
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/skip.php"); ?>
+  <?php require($base."/inc/skip.php"); ?>
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/header.php"); ?>
+  <?php require($base."/inc/header.php"); ?>
 
 
   <div class="content">
@@ -29,7 +32,7 @@
     </div>
   </div>
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/footer.php"); ?>
+  <?php require($base."/inc/footer.php"); ?>
 
 </body>
 </html>

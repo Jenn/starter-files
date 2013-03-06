@@ -1,8 +1,11 @@
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/doctype.php"); ?>
+<?php $base="."; ?>
+<?php require($base."/inc/doctype.php"); ?>
 
 <title>Starter Files with Sass &mdash; Table of Contents</title>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/meta.php"); ?>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/cssReference.php"); ?>
+<?php require($base."/inc/meta.php"); ?>
+<!--[if lt IE 9]><script src="a/j/html5shiv.js"></script><![endif]-->
+<link href="a/c/screen.css" rel="stylesheet" media="screen, projection" type="text/css" />
+<link href="a/c/print.css" rel="stylesheet" media="print" type="text/css" />
 </head>
 
 

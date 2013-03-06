@@ -1,14 +1,17 @@
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/doctype.php"); ?>
+<?php $base="../"; ?>
+<?php require($base."/inc/doctype.php"); ?>
 <title>General Styles</title>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/meta.php"); ?>
-<?php require($_SERVER["DOCUMENT_ROOT"]."/inc/cssReference.php"); ?>
+<?php require($base."/inc/meta.php"); ?>
+<!--[if lt IE 9]><script src="../a/j/html5shiv.js"></script><![endif]-->
+<link href="../a/c/screen.css" rel="stylesheet" media="screen, projection" type="text/css" />
+<link href="../a/c/print.css" rel="stylesheet" media="print" type="text/css" />
 </head>
 
 <body>
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/skip.php"); ?>
+  <?php require($base."/inc/skip.php"); ?>
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/header.php"); ?>
+  <?php require($base."/inc/header.php"); ?>
 
 
   <div class="content">
@@ -107,7 +110,7 @@ Cause it doesn't make a difference if we make it or not. We've got each other an
     </div>
   </div>
 
-  <?php require($_SERVER["DOCUMENT_ROOT"]."/inc/footer.php"); ?>
+  <?php require($base."/inc/footer.php"); ?>
 
 </body>
 </html>
