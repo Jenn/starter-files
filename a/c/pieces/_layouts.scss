@@ -36,15 +36,23 @@
 */
 .layout-b {
 	.main {
-		float: left;
-		@include percent(7,6);
+		float: none;
+		width: 100%;
 		@include border-box;
 		padding: $base $grid-gutter;
+		@media screen and (min-width: $q-600) { 
+			float: left;
+			@include percent(7,6);
+		}
 	}
 	.sub {
-		float: right;
-		@include percent(3,3);
+		float: none;
+		width: 100%;
 		@include border-box;
 		padding: $base $grid-gutter;
+		@media screen and (min-width: $q-600) { 
+			float: right;
+			@include percent(3,3);
+		}
 	}
 }

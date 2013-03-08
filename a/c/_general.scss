@@ -52,8 +52,10 @@ $maxContentWidth: $max-page-width + $grid-gutter;
 }
 
 // Breakpoints/Queries decided by design
+// Use q- format for easy find and replace globally if needed
 $q-320: 320px;
 $q-400: 400px;
+$q-600: 600px;
 $q-1200: 1200px;
 
 

@@ -157,33 +157,53 @@ fieldset {
 -------------------------------------------*/
 .page-header {
   background: rgba(0, 0, 0, 0.8);
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   .page-header a {
     color: #fff; }
     .page-header a:hover, .page-header a:focus {
       color: rgba(255, 255, 255, 0.6); }
+  @media screen and (min-width: 600px) {
+    .page-header {
+      text-align: left; } }
 
 .logo {
   display: block;
+  margin-bottom: 24px;
   font-size: 40px;
-  font-size: 4rem;
-  margin-bottom: 12px; }
+  font-size: 4rem; }
+  .logo a {
+    padding: 12px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration: none; }
+  @media screen and (min-width: 600px) {
+    .logo {
+      margin-bottom: 12px; }
+      .logo a {
+        padding: 0;
+        background: none; } }
 
-.nav-main {
-  float: left; }
-  .nav-main li {
-    display: inline; }
+.nav-main li {
+  display: inline; }
+@media screen and (min-width: 600px) {
+  .nav-main {
+    float: left; } }
 
-#search {
-  float: right; }
+@media screen and (min-width: 600px) {
+  #search {
+    float: right; } }
 
 .page-footer {
   background: rgba(0, 0, 0, 0.8);
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   .page-footer a {
     color: #fff; }
     .page-footer a:hover, .page-footer a:focus {
       color: rgba(255, 255, 255, 0.6); }
+  @media screen and (min-width: 600px) {
+    .page-footer {
+      text-align: left; } }
 
 /*  Page Containers */
 .wrap {
@@ -226,19 +246,27 @@ fieldset {
 	Main on left, Sub on right 
 */
 .layout-b .main {
-  float: left;
-  width: 69.375%;
+  float: none;
+  width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 12px 20px; }
+  @media screen and (min-width: 600px) {
+    .layout-b .main {
+      float: left;
+      width: 69.375%; } }
 .layout-b .sub {
-  float: right;
-  width: 30.625%;
+  float: none;
+  width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 12px 20px; }
+  @media screen and (min-width: 600px) {
+    .layout-b .sub {
+      float: right;
+      width: 30.625%; } }
 
 /*-------------------------------------------
    	Additional Classes

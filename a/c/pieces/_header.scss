@@ -3,27 +3,47 @@
 .page-header {
 	background: rgba(0,0,0,0.8);
 	color: #fff;
+	text-align: center;
 	a {
 		color: #fff;
 		&:hover, &:focus {
 			color: rgba(255,255,255, 0.6);
 		}
 	}
+	@media screen and (min-width: $q-600) { 
+		text-align: left;
+	}
 }
 
 .logo {
 	display: block;
+	margin-bottom: $base-med;
 	font-size: 40px; font-size: 4rem;
-	margin-bottom: $base;
+	a {
+		padding: $base $grid-gutter/2;
+		background: rgba(0,0,0,0.5);
+		text-decoration: none;
+	}
+	@media screen and (min-width: $q-600) { 
+		margin-bottom: $base;
+		a {
+			padding: 0;
+			background: none;
+		}
+	}
 }
 
 .nav-main {
-	float: left;
 	li {
 		display: inline;
+	}
+	@media screen and (min-width: $q-600) { 
+		float: left;
 	}
 }
 
 #search {
-	float: right;
+	@media screen and (min-width: $q-600) { 
+		float: right;
+	}
 }

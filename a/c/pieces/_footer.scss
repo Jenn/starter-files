@@ -3,10 +3,14 @@
 .page-footer {
 	background: rgba(0,0,0,0.8);
 	color: #fff;
+	text-align: center;
 	a {
 		color: #fff;
 		&:hover, &:focus {
 			color: rgba(255,255,255, 0.6);
 		}
+	}
+	@media screen and (min-width: $q-600) { 
+		text-align: left;
 	}
 }
