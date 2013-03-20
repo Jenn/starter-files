@@ -40,10 +40,16 @@
 	@media screen and (min-width: $q-600) { 
 		float: left;
 	}
+	.lt-ie9 & {
+		float: left;
+	}
 }
 
 #search {
 	@media screen and (min-width: $q-600) { 
+		float: right;
+	}
+	.lt-ie9 & {
 		float: right;
 	}
 }

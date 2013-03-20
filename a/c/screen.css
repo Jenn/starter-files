@@ -188,10 +188,14 @@ fieldset {
 @media screen and (min-width: 600px) {
   .nav-main {
     float: left; } }
+.lt-ie9 .nav-main {
+  float: left; }
 
 @media screen and (min-width: 600px) {
   #search {
     float: right; } }
+.lt-ie9 #search {
+  float: right; }
 
 .page-footer {
   background: rgba(0, 0, 0, 0.8);
