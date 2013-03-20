@@ -112,5 +112,9 @@ Cause it doesn't make a difference if we make it or not. We've got each other an
 
   <?php require($base."/inc/footer.php"); ?>
 
+  <?php require($base."/inc/jsReference.php"); ?>
+  <script type="text/javascript" src="../a/j/plugins/detect.js"></script>
+  <script type="text/javascript" src="../a/j/functions.js"></script>
+
 </body>
 </html>

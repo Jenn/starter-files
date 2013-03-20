@@ -34,5 +34,9 @@
 
   <?php require($base."/inc/footer.php"); ?>
 
+  <?php require($base."/inc/jsReference.php"); ?>
+  <script type="text/javascript" src="../a/j/plugins/detect.js"></script>
+  <script type="text/javascript" src="../a/j/functions.js"></script>
+
 </body>
 </html>
