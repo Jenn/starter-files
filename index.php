@@ -1,6 +1,5 @@
 <?php $base="."; ?>
 <?php require($base."/inc/doctype.php"); ?>
-
 <title>Starter Files with Sass &mdash; Table of Contents</title>
 <?php require($base."/inc/meta.php"); ?>
 <!--[if lt IE 9]><script src="a/j/html5shiv.js"></script><![endif]-->
@@ -29,5 +28,9 @@
       </section>
     </div>
   </div>
+
+  <?php require($base."/inc/jsReference.php"); ?>
+  <script type="text/javascript" src="a/j/plugins/detect.js"></script>
+  <script type="text/javascript" src="a/j/functions.js"></script>
 </body>
 </html>
