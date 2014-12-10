@@ -12,7 +12,7 @@ I utilize starter files to create the beginning of each project. I like to use S
 * screen.css
 * screen.scss
 * pieces/_carousel.scss
-* pieces/_foooter.scss
+* pieces/_footer.scss
 * pieces/_header.scss
 * pieces/_layouts.scss
 * pieces/_nav.scss
