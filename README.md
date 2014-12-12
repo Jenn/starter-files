@@ -16,7 +16,7 @@ I utilize starter files to create the beginning of each project. I like to use S
 * pieces/_header.scss
 * pieces/_layouts.scss
 * pieces/_nav.scss
-* pieces/_searchscss
+* pieces/_search.scss
 
 ## _general.scss
 
